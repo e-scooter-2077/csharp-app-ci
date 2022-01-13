@@ -40,7 +40,7 @@ jobs:
         with:
           warnings-as-errors: true
       - name: Unit Tests
-        if: ${{ inputs.unit-tests-project != '' }}
+        if: ${{ inputs.tests-project-path != '' }}
         uses: EasyDesk/action-dotnet-test@v1
         with:
           path: ${{ inputs.tests-project-path }}
