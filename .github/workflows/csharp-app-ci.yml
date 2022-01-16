@@ -75,7 +75,7 @@ jobs:
         with:
           version: ${{ needs.build.outputs.version }}
           prerelease: ${{ needs.build.outputs.is-prerelease }}
-          prefix: ${{ inputs.release-prefix }}
+          # prefix: ${{ inputs.release-prefix }}
           files: |
             *.zip
   
