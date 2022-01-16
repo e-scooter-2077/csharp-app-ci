@@ -1,4 +1,4 @@
-# Azure Functions CI
+# C# App CI
 This repo hosts the workflow file shared by every C# Desktop App or Hosted Runner project of this organization.
 
 ## Features
