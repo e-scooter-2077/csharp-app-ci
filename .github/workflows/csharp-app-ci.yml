@@ -69,7 +69,7 @@ jobs:
         shell: bash
         env:
           ZIP_OUTPUT_NAME: ${{ inputs.release-prefix }}_${{ needs.build.outputs.version }}
-        run: zip -r "${ZIP_OUTPUT_NAME//\//_}.zip" './*'
+        run: zip -r "${ZIP_OUTPUT_NAME//\//_}.zip" ./*
       - name: Release
         uses: EasyDesk/action-semver-release@v1
         with:
